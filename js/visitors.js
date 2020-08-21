@@ -10,6 +10,7 @@ function updateVisitCount(){
 
 });
 
-
+//resource doc: https://countapi.xyz/
+//use this to countdown: https://api.countapi.xyz/update/mycv2/git2/?amount=-1
 
 }
