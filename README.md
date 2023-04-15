@@ -2,7 +2,7 @@
 
 #### Author
 * Website: https://youvegotnigel.github.io
-* Linkedin: https://www.linkedin.com/in/nigel-mulholland/
+* LinkedIn: https://www.linkedin.com/in/nigel-mulholland/
 * Medium: https://medium.com/@youvegotnigel
 * GitHub: https://github.com/youvegotnigel
 * Twitter: https://twitter.com/youvegotnigel
