@@ -1,3 +1,25 @@
+@media screen and (max-width: 1920px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #experience,
+  .experience-details-container {
+    margin-bottom: 18rem;
+  }
+  #projects {
+    height: fit-content;
+  }
+  #experience,
+  .experience-details-container {
+    margin-bottom: 24rem;
+  }
+
+}
+
 @media screen and (max-width: 1400px) {
     #profile {
       height: 83vh;
