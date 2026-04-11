@@ -1,0 +1,42 @@
+/* ============================================================
+   Experience Section
+   ============================================================ */
+
+.experience__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: var(--sp-6);
+}
+
+/* Category card header */
+.exp-card__header {
+  margin-bottom: var(--sp-5);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.exp-card__title {
+  font-size: 0.95rem;
+  font-weight: var(--fw-semibold);
+  color: var(--clr-text);
+}
+
+/* Skills list */
+.exp-card__skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.exp-card__skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.exp-card__skill-name {
+  font-size: 0.9rem;
+  font-weight: var(--fw-medium);
+  color: var(--clr-text);
+}

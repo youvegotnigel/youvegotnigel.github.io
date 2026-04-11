@@ -1,504 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nigel Mulholland</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nigel Mulholland — Test Automation Specialist with 5+ years building robust QA frameworks across web, API, and mobile platforms." />
+  <title>Nigel Mulholland · Test Automation Specialist</title>
+  <link rel="icon" type="image/png" href="assets/images/profile/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles — loaded in dependency order -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components/navbar.css" />
+  <link rel="stylesheet" href="css/components/buttons.css" />
+  <link rel="stylesheet" href="css/components/cards.css" />
+  <link rel="stylesheet" href="css/sections/hero.css" />
+  <link rel="stylesheet" href="css/sections/about.css" />
+  <link rel="stylesheet" href="css/sections/experience.css" />
+  <link rel="stylesheet" href="css/sections/projects.css" />
+  <link rel="stylesheet" href="css/sections/contact.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
-    <nav id="desktop-nav">
-        <div class="logo">Nigel Mulholland</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav id="hamburger-nav">
-        <div class="logo">Nigel Mulholland</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
-      <section id="profile">
-        <div class="section__pic-container">
-          <img src="./assets/profile-pic.png" alt="Nigel's profile picture" />
-        </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Nigel Mulholland</h1>
-          <p class="section__text__p2">Test Automation Specialist</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="window.open('./assets/Nigel_Mulholland_QA_Automation.pdf')"
-            >
+  <!-- ════════════════════════════════════════════════════════
+       HEADER / NAVIGATION
+       ════════════════════════════════════════════════════════ -->
+  <header id="header">
+
+    <!-- Desktop -->
+    <nav class="nav__desktop nav__shell" id="desktop-nav" aria-label="Primary navigation">
+      <div class="nav__logo">NM.</div>
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile -->
+    <nav class="nav__mobile nav__shell" id="hamburger-nav" aria-label="Mobile navigation">
+      <div class="nav__logo">NM.</div>
+      <button class="hamburger-icon" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="menu-links" role="list" aria-hidden="true">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════════════════
+         HERO
+         ════════════════════════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="hero__inner">
+
+        <div class="hero__content">
+          <p class="hero__greeting">Hi, I'm</p>
+
+          <h1 class="hero__name">Nigel<br />Mulholland</h1>
+
+          <h2 class="hero__title">
+            <span class="typewriter-text"></span><span class="cursor" aria-hidden="true"></span>
+          </h2>
+
+          <p class="hero__bio">
+            A passionate QA engineer with 5+ years building robust test automation frameworks across web, API, and mobile — with a strong focus on CI/CD and shift-left quality strategies.
+          </p>
+
+          <div class="hero__cta">
+            <a href="assets/docs/Nigel_Mulholland_QA_Automation.pdf"
+               download
+               class="btn btn--primary">
               Download CV
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
-              Contact Info
-            </button>
+            </a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
           </div>
-          <div id="socials-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='https://www.linkedin.com/in/nigel-mulholland/'"
-            />
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-              onclick="location.href='https://github.com/youvegotnigel'"
-            />
-            <img
-            src="./assets/medium.png"
-            alt="My Medium profile"
-            class="icon"
-            onclick="location.href='https://medium.com/@youvegotnigel'"
-            />
-            <img
-            src="./assets/x.png"
-            alt="My Twitter profile"
-            class="icon"
-            onclick="location.href='https://twitter.com/youvegotnigel'"
-            />
+
+          <div class="hero__socials">
+            <a href="https://www.linkedin.com/in/nigel-mulholland/"
+               target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="LinkedIn">
+              <img src="assets/images/icons/linkedin.png" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://github.com/youvegotnigel"
+               target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="GitHub">
+              <img src="assets/images/icons/github.png" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://medium.com/@youvegotnigel"
+               target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="Medium">
+              <img src="assets/images/icons/medium.png" alt="" aria-hidden="true" />
+            </a>
+            <a href="https://twitter.com/youvegotnigel"
+               target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="Twitter / X">
+              <img src="assets/images/icons/x.png" alt="" aria-hidden="true" />
+            </a>
           </div>
         </div>
-      </section>
-      <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/about-pic.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>5+ years 
-                    <br />Test Automation
-                </p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>
-                    B.Sc. in Physical Science (USJ)
-                    <br />ISTQB Certified Tester
-                </p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                I am a software testing professional with over 5 years of experience and an ISTQB certified 
-                Test Automation Engineer who is passionate about technology. My experience includes strong 
-                analytical skills and hands-on experience in using open-source tools for API/Web/Mobile 
-                test automation. I am very interested in the future of automation testing and expanding my 
-                knowledge in performance and security testing.
-              </p>
-            </div>
+
+        <div class="hero__image">
+          <div class="hero__image-wrapper">
+            <img src="assets/images/profile/profile-pic.png"
+                 alt="Nigel Mulholland"
+                 width="360" height="360"
+                 loading="eager" />
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Web UI Automation</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Selenium</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Katalon</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Playwright</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Cypress</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">API Automation</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Postman</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div style="white-space: nowrap;">
-                    <h3>REST Assured</h3>
-                    <p>Intermediate</p>
-                  </div>
-              </div>
-            </div>
-            <div class="details-container"> 
-                <h2 class="experience-sub-title">Mobile Automation</h2>
-                <div class="article-container">
-                    <article>
-                        <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Appium</h3>
-                    <p>Experienced</p>
-                  </div>
-                    </article>
-                    <article>
-                        <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Espresso</h3>
-                    <p>Basic</p>
-                  </div>
-                    </article>
-                    <article>
-                        <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>XCUITest</h3>
-                    <p>Baisc</p>
-                  </div>
-                    </article>
-                </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Programming Languages</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JAVA</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Groovy</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>TypeScript</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Performance Testing</h2>
-                <div class="article-container">
-                  <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JMeter</h3>
-                    <p>Intermediate</p>
-                  </div>
-                  </article>
-                  <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>K6</h3>
-                    <p>Intermediate</p>
-                  </div>
-                  </article>
-                </div>
-            </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Continuous Integration</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jenkins</h3>
-                  <p>Experienced</p>
-                </div>
-                </article>
-                <article>
-                  <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Azure DevOps</h3>
-                  <p>Intermediate</p>
-                </div>
-                </article>
-                <article>
-                  <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate</p>
-                </div>
-                </article>
-              </div>
-          </div>
-          </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         ABOUT
+         ════════════════════════════════════════════════════════ -->
+    <section id="about" class="about section" aria-label="About me">
+      <div class="section__inner">
+
+        <div class="section__header animate">
+          <p class="section__tag">Who I Am</p>
+          <h2 class="section__title">About Me</h2>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
-      </section>
-      <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
+
+        <div class="about__grid">
+          <div class="about__image-wrapper animate from-left">
+            <img src="assets/images/profile/about-pic.png"
+                 alt="Nigel Mulholland"
+                 loading="lazy" width="500" height="600" />
+          </div>
+
+          <div class="animate from-right">
+            <p class="about__body">
+              I'm a software testing professional with over 5 years of experience and an ISTQB-certified Test Automation Engineer passionate about technology. My expertise covers strong analytical skills and hands-on experience with open-source tools for API, web, and mobile test automation.
+            </p>
+            <p class="about__body">
+              I'm deeply interested in the future of automation testing and continually expanding my knowledge in performance and security testing — always pushing toward better quality, faster.
+            </p>
+
+            <div class="about__stats">
+              <div class="about__stat animate">
+                <div class="about__stat-value">5+</div>
+                <div class="about__stat-label">Years Experience</div>
               </div>
-              <h2 class="experience-sub-title project-title">Selenium BDD Automation Framework</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
+              <div class="about__stat animate">
+                <div class="about__stat-value">ISTQB</div>
+                <div class="about__stat-label">Certified Tester</div>
               </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
+              <div class="about__stat animate">
+                <div class="about__stat-value">B.Sc.</div>
+                <div class="about__stat-label">Physical Science · USJ</div>
               </div>
-              <h2 class="experience-sub-title project-title">Cypress BDD Automation Framework</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/youvegotnigel/cypress-cucumber-allure-demo'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-3.png"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Playwright BDD Automation Framework</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
+              <div class="about__stat animate">
+                <div class="about__stat-value">10+</div>
+                <div class="about__stat-label">Tools Mastered</div>
               </div>
             </div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:youvegotnigel@gmail.com">Email</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/nigel-mulholland/" target="_blank">LinkedIn</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/whatsapp.png"
-              alt="WhatsApp icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://wa.me/+94728194022" target="_blank">WhatsApp</a></p>
-          </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         EXPERIENCE
+         ════════════════════════════════════════════════════════ -->
+    <section id="experience" class="section" aria-label="Technical experience">
+      <div class="section__inner">
+
+        <div class="section__header animate">
+          <p class="section__tag">What I Work With</p>
+          <h2 class="section__title">Experience</h2>
+          <p class="section__subtitle">A snapshot of the tools and technologies I've used throughout my career.</p>
         </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+
+        <div class="experience__grid">
+
+          <!-- Web UI Automation -->
+          <div class="card animate">
+            <div class="exp-card__header">
+              <h3 class="exp-card__title">Web UI Automation</h3>
+            </div>
+            <ul class="exp-card__skills">
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Selenium</span>
+                <span class="badge badge--expert">Expert</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Katalon</span>
+                <span class="badge badge--expert">Expert</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Cypress</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Playwright</span>
+                <span class="badge badge--basic">Basic</span>
+              </li>
             </ul>
           </div>
-        </nav>
-        <p>Copyright &#169; 2024 Nigel Mulholland. All Rights Reserved.</p>
-      </footer>
 
-    <script src="script.js"></script>
+          <!-- API Automation -->
+          <div class="card animate">
+            <div class="exp-card__header">
+              <h3 class="exp-card__title">API Automation</h3>
+            </div>
+            <ul class="exp-card__skills">
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Postman</span>
+                <span class="badge badge--expert">Expert</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">REST Assured</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Automation -->
+          <div class="card animate">
+            <div class="exp-card__header">
+              <h3 class="exp-card__title">Mobile Automation</h3>
+            </div>
+            <ul class="exp-card__skills">
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Appium</span>
+                <span class="badge badge--expert">Expert</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Espresso</span>
+                <span class="badge badge--basic">Basic</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">XCUITest</span>
+                <span class="badge badge--basic">Basic</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Languages -->
+          <div class="card animate">
+            <div class="exp-card__header">
+              <h3 class="exp-card__title">Languages</h3>
+            </div>
+            <ul class="exp-card__skills">
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Groovy</span>
+                <span class="badge badge--expert">Expert</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Java</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">TypeScript</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Performance Testing -->
+          <div class="card animate">
+            <div class="exp-card__header">
+              <h3 class="exp-card__title">Performance Testing</h3>
+            </div>
+            <ul class="exp-card__skills">
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">JMeter</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">K6</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CI / CD -->
+          <div class="card animate">
+            <div class="exp-card__header">
+              <h3 class="exp-card__title">CI / CD</h3>
+            </div>
+            <ul class="exp-card__skills">
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Jenkins</span>
+                <span class="badge badge--expert">Expert</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Azure DevOps</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+              <li class="exp-card__skill">
+                <span class="exp-card__skill-name">Docker</span>
+                <span class="badge badge--intermediate">Intermediate</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         PROJECTS
+         ════════════════════════════════════════════════════════ -->
+    <section id="projects" class="projects section" aria-label="Projects">
+      <div class="section__inner">
+
+        <div class="section__header animate">
+          <p class="section__tag">What I've Built</p>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">A selection of automation frameworks I've crafted from scratch.</p>
+        </div>
+
+        <div class="projects__grid">
+
+          <!-- Project 1 -->
+          <article class="project-card card animate">
+            <div class="project-card__img-wrap">
+              <img src="assets/images/projects/project-1.png"
+                   alt="Selenium BDD Automation Framework"
+                   loading="lazy" />
+            </div>
+            <h3 class="project-card__title">Selenium BDD Framework</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Selenium</span>
+              <span class="project-card__tag">BDD</span>
+              <span class="project-card__tag">Java</span>
+              <span class="project-card__tag">Cucumber</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/youvegotnigel"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn--ghost">GitHub</a>
+              <a href="https://github.com/youvegotnigel"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn--ghost">Live Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card card animate">
+            <div class="project-card__img-wrap">
+              <img src="assets/images/projects/project-2.png"
+                   alt="Cypress BDD Automation Framework"
+                   loading="lazy" />
+            </div>
+            <h3 class="project-card__title">Cypress BDD Framework</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Cypress</span>
+              <span class="project-card__tag">BDD</span>
+              <span class="project-card__tag">TypeScript</span>
+              <span class="project-card__tag">Allure</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/youvegotnigel/cypress-cucumber-allure-demo"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn--ghost">GitHub</a>
+              <a href="https://github.com/youvegotnigel/cypress-cucumber-allure-demo"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn--ghost">Live Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card animate">
+            <div class="project-card__img-wrap">
+              <img src="assets/images/projects/project-3.png"
+                   alt="Playwright BDD Automation Framework"
+                   loading="lazy" />
+            </div>
+            <h3 class="project-card__title">Playwright BDD Framework</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Playwright</span>
+              <span class="project-card__tag">BDD</span>
+              <span class="project-card__tag">TypeScript</span>
+            </div>
+            <div class="project-card__actions">
+              <a href="https://github.com/youvegotnigel"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn--ghost">GitHub</a>
+              <a href="https://github.com/youvegotnigel"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn--ghost">Live Demo</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         CONTACT
+         ════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section" aria-label="Contact">
+      <div class="section__inner">
+
+        <div class="section__header animate">
+          <p class="section__tag">Let's Connect</p>
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__subtitle">Open to new opportunities in test automation and quality engineering. My inbox is always open.</p>
+        </div>
+
+        <div class="contact__card animate">
+          <div class="contact__links">
+
+            <a href="mailto:youvegotnigel@gmail.com" class="contact__link animate">
+              <img src="assets/images/icons/email.png" alt="" aria-hidden="true" />
+              youvegotnigel@gmail.com
+            </a>
+
+            <a href="https://www.linkedin.com/in/nigel-mulholland/"
+               target="_blank" rel="noopener noreferrer"
+               class="contact__link animate">
+              <img src="assets/images/icons/linkedin.png" alt="" aria-hidden="true" />
+              linkedin.com/in/nigel-mulholland
+            </a>
+
+            <a href="https://wa.me/+94728194022"
+               target="_blank" rel="noopener noreferrer"
+               class="contact__link animate">
+              <img src="assets/images/icons/whatsapp.png" alt="" aria-hidden="true" />
+              WhatsApp
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <ul class="footer__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="footer__copy">
+        &copy; 2026 <span>Nigel Mulholland</span>. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Module script — deferred by default, no inline JS anywhere -->
+  <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
