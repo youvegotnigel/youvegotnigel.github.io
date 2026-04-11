@@ -1,0 +1,96 @@
+/* ============================================================
+   Contact Section + Footer
+   ============================================================ */
+
+/* Centered contact card */
+.contact__card {
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact__body {
+  font-size: 1rem;
+  color: var(--clr-muted);
+  line-height: 1.75;
+  margin-bottom: var(--sp-10);
+}
+
+/* Links */
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  text-align: left;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-6);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--clr-border);
+  background: var(--clr-card);
+  background-image: var(--grad-card);
+  color: var(--clr-muted);
+  font-size: 0.9rem;
+  transition:
+    border-color var(--dur-fast),
+    color        var(--dur-fast),
+    background   var(--dur-fast),
+    transform    var(--dur-fast) var(--ease-spring);
+}
+
+.contact__link:hover {
+  border-color: var(--clr-primary);
+  color: var(--clr-primary);
+  background: var(--clr-primary-dim);
+  transform: translateX(6px);
+}
+
+.contact__link img {
+  width: 22px; height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0.55);
+  transition: filter var(--dur-fast);
+}
+
+.contact__link:hover img { filter: brightness(1); }
+
+/* ── Footer ───────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--clr-border);
+  padding: var(--sp-8) 0;
+}
+
+.footer__inner {
+  max-width: var(--max-w);
+  width: var(--content-w);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-5);
+}
+
+.footer__links {
+  display: flex;
+  gap: var(--sp-8);
+}
+
+.footer__links a {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  transition: color var(--dur-fast);
+}
+
+.footer__links a:hover { color: var(--clr-primary); }
+
+.footer__copy {
+  font-size: 0.75rem;
+  color: var(--clr-dim);
+}
+
+.footer__copy span { color: var(--clr-primary); }
