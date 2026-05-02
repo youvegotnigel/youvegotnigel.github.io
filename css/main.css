@@ -524,10 +524,10 @@ h1.hero-title{
   padding-top:2px;
 }
 .diff-line .text{
-  font-family:var(--serif);
-  font-size:14px;
+  font-family:var(--mono);
+  font-size:12px;
   color:var(--ink-dim);
-  line-height:1.55;
+  line-height:1.6;
 }
 .diff-line .text strong{color:var(--ink);font-weight:500}
 
