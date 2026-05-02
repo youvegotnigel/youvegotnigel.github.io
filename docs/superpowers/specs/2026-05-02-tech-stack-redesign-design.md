@@ -44,7 +44,7 @@ One change to `css/main.css`:
 ### Scope
 
 - `index.html` — uncomment skills section, replace skill-list markup with chip tags
-- `css/main.css` — add `.skill-tags`, update `.skill-cat-name` color
+- `css/main.css` — add `.skill-tags`
 
 No other sections are affected. No new CSS files. No JS changes.
 
@@ -52,7 +52,7 @@ No other sections are affected. No new CSS files. No JS changes.
 
 | Category | Skills |
 |---|---|
-| UI Automation | Selenide, Playwright, Selenium WD, Cypress, Appium, CodeceptJS |
-| API & Performance | REST Assured, Postman / Newman, JMeter, K6, Blazemeter, Axe Core (a11y) |
-| Languages | Java 17, JavaScript, TypeScript, Groovy, Cucumber BDD, TestNG / JUnit |
-| DevOps & Cloud | Jenkins, Azure DevOps, AWS / ECS Fargate, Maven · Gradle, Docker, Selenium Grid |
+| UI Automation | Selenide, Playwright, Selenium, Cypress, Appium, CodeceptJS |
+| API & Performance | REST Assured, Postman / Newman, JMeter, K6, Blazemeter, Axe Core |
+| Languages & Frameworks | Java, JavaScript, TypeScript, Groovy, Cucumber BDD, TestNG / JUnit |
+| DevOps & Cloud | Jenkins, Azure DevOps, AWS / ECS Fargate, Maven, Docker, Selenium Grid |
