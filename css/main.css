@@ -113,13 +113,13 @@ section{
 }
 .hero-name{
   font-family:var(--serif);
-  font-size:32px;font-weight:400;
+  font-size:38px;font-weight:400;
   color:var(--ink);
   letter-spacing:-.02em;
   line-height:1;
 }
 .hero-role{
-  font-size:11px;color:var(--accent);
+  font-size:13px;color:var(--accent);
   letter-spacing:.15em;text-transform:uppercase;
   font-weight:500;
 }
