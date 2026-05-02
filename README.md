@@ -1,9 +1,18 @@
-### Nigel Mulholland | Portfolio
+# Nigel Mulholland
 
-#### Author
-* Website: https://youvegotnigel.github.io
-* LinkedIn: https://www.linkedin.com/in/nigel-mulholland/
-* Medium: https://medium.com/@youvegotnigel
-* GitHub: https://github.com/youvegotnigel
-* Twitter: https://twitter.com/youvegotnigel
-* Facebook: https://www.facebook.com/youvegotnigel/
+Lead Test Automation Engineer. I build frameworks; you ship without fear.
+
+This is my portfolio: a compact static site covering my QE story, automation stack, selected work, and contact details.
+
+**Live:** https://youvegotnigel.github.io
+
+## Built With
+
+HTML, CSS, JavaScript, and a little terminal shaped personality.
+
+## Find Me
+
+- [LinkedIn](https://www.linkedin.com/in/nigel-mulholland/)
+- [GitHub](https://github.com/youvegotnigel)
+- [Medium](https://medium.com/@youvegotnigel)
+- [X](https://twitter.com/youvegotnigel)
