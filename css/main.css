@@ -167,7 +167,7 @@ h1.hero-title{
   margin-bottom:48px;
   line-height:1.5;
 }
-.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:-24px}
 .btn{
   font-family:var(--mono);
   font-size:12px;font-weight:500;
