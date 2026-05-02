@@ -200,7 +200,7 @@ h1.hero-title{
   border:1px solid var(--line-strong);
   border-radius:8px;
   overflow:hidden;
-  font-size:11px;
+  font-size:13px;
   box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 0 1px rgba(212,255,63,.03);
 }
 .terminal-bar{
@@ -215,15 +215,15 @@ h1.hero-title{
 .term-dot.g{background:#27C93F}
 .terminal-bar-title{
   flex:1;text-align:center;color:var(--ink-faint);
-  font-size:10px;letter-spacing:.05em;
+  font-size:12px;letter-spacing:.05em;
 }
 .terminal-body{
-  padding:18px 20px;
-  min-height:380px;
+  padding:24px 26px;
+  min-height:440px;
   font-family:var(--mono);
   line-height:1.7;
 }
-.term-line{display:flex;gap:10px;color:var(--ink-dim);font-size:11px;opacity:0;animation:fadeUp .4s forwards}
+.term-line{display:flex;gap:10px;color:var(--ink-dim);font-size:13px;opacity:0;animation:fadeUp .4s forwards}
 .term-line .prompt{color:var(--accent)}
 .term-line .pass{color:var(--accent);font-weight:500}
 .term-line .fail{color:var(--red)}
