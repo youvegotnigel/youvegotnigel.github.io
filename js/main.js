@@ -102,3 +102,15 @@ const spyObs = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-60px 0px -60% 0px', threshold: 0 });
 document.querySelectorAll('section[id]').forEach(s => spyObs.observe(s));
+
+// Email copy
+const emailLink = document.querySelector('.contact-email');
+if (emailLink) {
+  emailLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    navigator.clipboard.writeText(emailLink.textContent.trim()).then(() => {
+      emailLink.classList.add('copied');
+      setTimeout(() => emailLink.classList.remove('copied'), 2000);
+    });
+  });
+}
