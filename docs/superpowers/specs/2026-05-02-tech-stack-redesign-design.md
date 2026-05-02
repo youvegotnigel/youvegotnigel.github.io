@@ -32,16 +32,14 @@ The grid wrapper, `.skill-cat`, `.skill-cat-num`, and `.skill-cat-name` elements
 
 ### CSS
 
-Two changes to `css/main.css`:
+One change to `css/main.css`:
 
-1. **Add** `.skill-tags` container:
-   ```css
-   .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-   ```
+**Add** `.skill-tags` container:
+```css
+.skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+```
 
-2. **Update** `.skill-cat-name` color from `var(--ink)` to `var(--accent)` so category headers use the yellow-green accent, matching the mockup.
-
-The existing `.chip` class already provides the correct chip styling (bordered, monospace, `--ink-dim` text) — no new chip styles needed.
+`.skill-cat-name` already uses `var(--accent)` — no color change needed. The existing `.chip` class already provides the correct chip styling (bordered, monospace, `--ink-dim` text) — no new chip styles needed.
 
 ### Scope
 
