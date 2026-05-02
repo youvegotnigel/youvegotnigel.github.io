@@ -728,8 +728,21 @@ h1.hero-title{
   padding-bottom:4px;
   margin-bottom:48px;
   transition:color .2s;
+  position:relative;cursor:pointer;
 }
 .contact-email:hover{color:var(--accent)}
+.contact-email::after{
+  content:'copied!';
+  position:absolute;
+  top:-32px;left:50%;transform:translateX(-50%);
+  background:var(--accent);color:#000;
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 10px;border-radius:4px;
+  opacity:0;pointer-events:none;
+  transition:opacity .2s;
+}
+.contact-email.copied{color:var(--accent)}
+.contact-email.copied::after{opacity:1}
 .contact-socials{display:flex;justify-content:center;gap:32px;font-size:12px}
 .contact-socials a{
   color:var(--ink-dim);
