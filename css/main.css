@@ -163,11 +163,11 @@ h1.hero-title{
   font-family:var(--serif);
   font-size:18px;
   color:var(--ink-dim);
-  max-width:520px;
+  max-width:700px;
   margin-bottom:48px;
   line-height:1.5;
 }
-.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:-24px}
 .btn{
   font-family:var(--mono);
   font-size:12px;font-weight:500;
@@ -200,7 +200,7 @@ h1.hero-title{
   border:1px solid var(--line-strong);
   border-radius:8px;
   overflow:hidden;
-  font-size:11px;
+  font-size:13px;
   box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 0 1px rgba(212,255,63,.03);
 }
 .terminal-bar{
@@ -215,15 +215,15 @@ h1.hero-title{
 .term-dot.g{background:#27C93F}
 .terminal-bar-title{
   flex:1;text-align:center;color:var(--ink-faint);
-  font-size:10px;letter-spacing:.05em;
+  font-size:12px;letter-spacing:.05em;
 }
 .terminal-body{
-  padding:18px 20px;
-  min-height:380px;
+  padding:24px 26px;
+  min-height:440px;
   font-family:var(--mono);
   line-height:1.7;
 }
-.term-line{display:flex;gap:10px;color:var(--ink-dim);font-size:11px;opacity:0;animation:fadeUp .4s forwards}
+.term-line{display:flex;gap:10px;color:var(--ink-dim);font-size:13px;opacity:0;animation:fadeUp .4s forwards}
 .term-line .prompt{color:var(--accent)}
 .term-line .pass{color:var(--accent);font-weight:500}
 .term-line .fail{color:var(--red)}
@@ -273,7 +273,7 @@ h1.hero-title{
 }
 .about-text{
   font-family:var(--serif);font-size:21px;line-height:1.65;color:var(--ink);
-  font-weight:300;
+  font-weight:300;margin-top:-68px;
 }
 .about-text p{margin-bottom:24px}
 .about-text .accent{color:var(--accent);font-style:italic}
@@ -524,10 +524,10 @@ h1.hero-title{
   padding-top:2px;
 }
 .diff-line .text{
-  font-family:var(--serif);
-  font-size:14px;
+  font-family:var(--mono);
+  font-size:12px;
   color:var(--ink-dim);
-  line-height:1.55;
+  line-height:1.6;
 }
 .diff-line .text strong{color:var(--ink);font-weight:500}
 
@@ -722,14 +722,27 @@ h1.hero-title{
 }
 .contact-title em{font-style:italic;color:var(--accent);font-weight:400}
 .contact-email{
-  display:inline-block;
+  display:inline-flex;align-items:center;gap:8px;
   font-size:18px;color:var(--ink);
   border-bottom:1px solid var(--accent);
   padding-bottom:4px;
   margin-bottom:48px;
   transition:color .2s;
+  position:relative;cursor:pointer;
 }
 .contact-email:hover{color:var(--accent)}
+.contact-email::after{
+  content:'copied!';
+  position:absolute;
+  top:-32px;left:50%;transform:translateX(-50%);
+  background:var(--accent);color:#000;
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 10px;border-radius:4px;
+  opacity:0;pointer-events:none;
+  transition:opacity .2s;
+}
+.contact-email.copied{color:var(--accent)}
+.contact-email.copied::after{opacity:1}
 .contact-socials{display:flex;justify-content:center;gap:32px;font-size:12px}
 .contact-socials a{
   color:var(--ink-dim);
@@ -738,8 +751,7 @@ h1.hero-title{
   display:flex;align-items:center;gap:6px;
 }
 .contact-socials a:hover{color:var(--accent)}
-.contact-socials a::before{content:'↗';color:var(--ink-faint);transition:color .2s}
-.contact-socials a:hover::before{color:var(--accent)}
+.contact-socials a svg{flex-shrink:0}
 
 footer{
   padding:32px 40px;
@@ -755,6 +767,7 @@ footer .ok{color:var(--accent)}
 @media (max-width:980px){
   nav{padding:16px 20px}
   .nav-links{display:none}
+  .nav-status{display:none}
   section{padding:80px 20px}
   .hero{padding:120px 20px 60px}
   .hero-inner{grid-template-columns:1fr;gap:48px}
