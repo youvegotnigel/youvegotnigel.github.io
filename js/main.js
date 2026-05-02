@@ -90,3 +90,15 @@ const fadeObs = new IntersectionObserver((entries) => {
   });
 }, { threshold: .15 });
 fadeEls.forEach(el => fadeObs.observe(el));
+
+// Scrollspy
+const navLinks = document.querySelectorAll('.nav-links a');
+const spyObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    navLinks.forEach(a => a.classList.remove('active'));
+    const link = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+    if (link) link.classList.add('active');
+  });
+}, { rootMargin: '-60px 0px -60% 0px', threshold: 0 });
+document.querySelectorAll('section[id]').forEach(s => spyObs.observe(s));
