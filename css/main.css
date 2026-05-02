@@ -291,11 +291,12 @@ h1.hero-title{
   letter-spacing:.1em;margin-bottom:12px;
 }
 .skill-cat-name{
-  font-family:var(--serif);
-  font-size:22px;font-weight:400;font-style:italic;
+  font-family:var(--mono);
+  font-size:13px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;
   color:var(--accent);
-  margin-bottom:24px;
-  letter-spacing:-.02em;
+  padding-bottom:10px;margin-bottom:16px;
+  border-bottom:1px solid var(--line);
 }
 .skill-tags{display:flex;flex-wrap:wrap;gap:6px}
 
@@ -483,11 +484,11 @@ h1.hero-title{
 }
 
 .chip{
-  font-size:10px;color:var(--ink-dim);
-  padding:4px 10px;
+  font-size:14px;color:var(--ink-dim);
+  padding:5px 12px;
   border:1px solid var(--line-strong);
   border-radius:2px;
-  letter-spacing:.05em;
+  letter-spacing:.03em;
   font-family:var(--mono);
 }
 
