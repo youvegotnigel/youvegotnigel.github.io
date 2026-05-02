@@ -597,7 +597,7 @@
         <div class="project">
           <div class="project-meta">
             <span class="project-num">CASE_01</span>
-            <span class="project-status"><span class="dot"></span>In Production</span>
+            <span class="project-status"><span class="dot"></span>Load Testing</span>
           </div>
           <div class="project-title">PVT Docker Framework</div>
           <div class="project-tagline">Performance Verification Testing on AWS Fargate</div>
@@ -629,6 +629,7 @@
           </div>
           <div class="project-stack">
             <span class="chip">Playwright</span>
+            <span class="chip">Docker</span>
             <span class="chip">AWS ECS</span>
             <span class="chip">Fargate</span>
             <span class="chip">AWS ECR</span>
@@ -655,7 +656,8 @@
           <div class="project-block">
             <div class="project-block-label">Solution</div>
             <div class="project-block-text">Built a UI BDD framework using Maven, Selenide, Cucumber, and TestNG
-              with a Page Object Model, Allure reporting and a Dockerised Selenium Grid for parallel cross browser execution
+              with a Page Object Model, Allure reporting and a Dockerised Selenium Grid for parallel cross browser
+              execution
               across multiple client environments.</div>
           </div>
 
@@ -687,72 +689,76 @@
         <div class="project">
           <div class="project-meta">
             <span class="project-num">CASE_03</span>
-            <span class="project-status"><span class="dot"></span>Embedded in Pipeline</span>
+            <span class="project-status"><span class="dot"></span>Live / Open Source</span>
           </div>
-          <div class="project-title">Accessibility-First Pipeline</div>
-          <div class="project-tagline">Axe Core + WCAG, baked into CI</div>
+          <div class="project-title">Playwright Commands Cheat Sheet</div>
+          <div class="project-tagline">200+ commands, searchable, filterable, copy ready</div>
 
           <div class="project-block">
             <div class="project-block-label">Problem</div>
-            <div class="project-block-text">Accessibility was a checklist item that quietly slipped between sprints.
-              Healthcare users couldn't afford that.</div>
+            <div class="project-block-text">Engineers constantly tab hop between Playwright docs looking for the right
+              command, syntax, or example breaking focus every time.</div>
           </div>
           <div class="project-block">
             <div class="project-block-label">Solution</div>
-            <div class="project-block-text">Introduced an org-wide a11y strategy: Axe Core scans embedded in automation
-              runs, WCAG violations failing the build, and shared reporting that PMs actually opened.</div>
+            <div class="project-block-text">Built an interactive browser based reference with 200+ commands across 10
+              categories. Filter by difficulty, search by keyword, copy snippets instantly, and jump
+              straight to the official docs, all in one place.</div>
           </div>
 
           <div class="project-impact">
             <div>
-              <div class="impact-num">A11y</div>
-              <div class="impact-label">Non-skippable gate</div>
+              <div class="impact-num">208+</div>
+              <div class="impact-label">Commands documented</div>
             </div>
             <div>
-              <div class="impact-num">15+</div>
-              <div class="impact-label">Engineers trained</div>
+              <div class="impact-num">10</div>
+              <div class="impact-label">Categories covered</div>
             </div>
           </div>
           <div class="project-stack">
-            <span class="chip">Axe Core</span>
-            <span class="chip">WCAG 2.1</span>
             <span class="chip">Playwright</span>
-            <span class="chip">Jenkins</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">GitHub Pages</span>
           </div>
         </div>
+
         <div class="project">
           <div class="project-meta">
             <span class="project-num">CASE_04</span>
-            <span class="project-status"><span class="dot"></span>Adopted Org-Wide</span>
+            <span class="project-status"><span class="dot"></span>API Testing</span>
           </div>
-          <div class="project-title">Cypress + Cucumber Regression Suite</div>
-          <div class="project-tagline">Fast feedback for an enterprise healthcare platform</div>
+          <div class="project-title">Rest Assured API Regression Suite</div>
+          <div class="project-tagline">Automated contract validation across microservices</div>
 
           <div class="project-block">
             <div class="project-block-label">Problem</div>
-            <div class="project-block-text">Manual regression cycles dominated release time. Developers waited too long
-              to know if their change broke anything downstream.</div>
+            <div class="project-block-text">REST API contracts were verified manually through shared Postman collections.
+              Endpoint changes broke integrations silently, with failures surfacing days later in staging rather than at the source.</div>
           </div>
           <div class="project-block">
             <div class="project-block-label">Solution</div>
-            <div class="project-block-text">Designed a Cypress + Cucumber framework with Allure reporting, wired into
-              Jenkins with scheduled runs and email alerts. Built BDD scenarios devs could read.</div>
+            <div class="project-block-text">Built a Rest Assured framework in Java with TestNG, covering auth flows, schema
+              validation, and negative path scenarios. Environment agnostic config let the same suite run locally and in CI without modification.</div>
           </div>
 
           <div class="project-impact">
             <div>
-              <div class="impact-num">−50%</div>
-              <div class="impact-label">Testing effort</div>
+              <div class="impact-num">300+</div>
+              <div class="impact-label">API test cases automated</div>
             </div>
             <div>
-              <div class="impact-num">−30%</div>
-              <div class="impact-label">Release cycle time</div>
+              <div class="impact-num">−40%</div>
+              <div class="impact-label">API defect escape rate</div>
             </div>
           </div>
           <div class="project-stack">
-            <span class="chip">Cypress</span>
-            <span class="chip">Cucumber</span>
-            <span class="chip">Allure</span>
+            <span class="chip">Rest Assured</span>
+            <span class="chip">Java</span>
+            <span class="chip">TestNG</span>
+            <span class="chip">Maven</span>
+            <span class="chip">Swagger</span>
             <span class="chip">Jenkins</span>
           </div>
         </div>
