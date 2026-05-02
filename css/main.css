@@ -550,6 +550,14 @@ h1.hero-title{
   letter-spacing:.02em;
   background:var(--bg);
   font-family:var(--mono);
+  transition:transform .15s ease,border-color .15s ease,color .15s ease,background .15s ease;
+  cursor:default;
+}
+.commit-files .file:hover{
+  transform:translateY(-2px);
+  border-color:var(--accent);
+  color:var(--ink);
+  background:var(--bg-elevated);
 }
 .commit-files .file::before{
   content:'+ ';color:var(--accent);font-weight:500;
