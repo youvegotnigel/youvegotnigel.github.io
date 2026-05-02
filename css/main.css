@@ -273,7 +273,7 @@ h1.hero-title{
 }
 .about-text{
   font-family:var(--serif);font-size:21px;line-height:1.65;color:var(--ink);
-  font-weight:300;
+  font-weight:300;margin-top:-68px;
 }
 .about-text p{margin-bottom:24px}
 .about-text .accent{color:var(--accent);font-style:italic}
