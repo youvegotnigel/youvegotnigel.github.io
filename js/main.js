@@ -2,19 +2,30 @@
 const lines = [
   ['<span class="prompt">$</span> <span class="ok">npx playwright test --project=chromium --workers=4</span>', 0],
 
-  ['<span class="dim">Running 247 tests using 4 workers</span>', 200],
+  ['<span class="dim">Running 6 tests using 4 workers</span>', 200],
+
+  ['<span class="ok">Running</span> <span class="dim">api.AppointmentBookingTest</span>', 300],
 
   ['  <span class="pass">✓</span> <span class="dim">[api] appointment › create valid payload</span> <span class="dim">(412ms)</span>', 200],
   ['  <span class="pass">✓</span> <span class="dim">[api] appointment › reject invalid data</span> <span class="dim">(287ms)</span>', 180],
   ['  <span class="pass">✓</span> <span class="dim">[api] session › persist cookie</span> <span class="dim">(198ms)</span>', 180],
 
+
+  ['<span class="ok">Running</span> <span class="dim">ui.PatientPortalE2E</span>', 300],
+
   ['  <span class="pass">✓</span> <span class="dim">[ui] login › MFA redirect</span> <span class="dim">(2.1s)</span>', 200],
   ['  <span class="pass">✓</span> <span class="dim">[ui] accessibility › WCAG AA</span> <span class="dim">(1.4s)</span>', 180],
   ['  <span class="pass">✓</span> <span class="dim">[ui] booking › end-to-end flow</span> <span class="dim">(3.8s)</span>', 200],
 
-  ['<span class="dim">────────────</span>', 150],
+  ['<span class="ok">Running</span> <span class="dim">a11y.AuditReport</span>', 300],
 
-  ['<span class="pass">247 passed</span> <span class="dim">(12.4s)</span>', 250],
+  ['  <span class="pass">✓</span> <span class="dim">[a11y] home › no keyboard traps</span> <span class="dim">(2.8s)</span>', 200],
+  ['  <span class="pass">✓</span> <span class="dim">[a11y] booking form › all inputs have labels</span> <span class="dim">(3.1s)</span>', 180],
+  ['  <span class="pass">✓</span> <span class="dim">[a11y] modal › focus returns to trigger on close</span> <span class="dim">(2.5s)</span>', 200],
+
+  ['<span class="dim">────────────────────────────────────────────────────────────</span>', 150],
+
+  ['<span class="pass">9 passed</span> <span class="dim">(12.4s)</span>', 250],
 
   ['<span class="dim">npx playwright show-report</span>', 200],
 
