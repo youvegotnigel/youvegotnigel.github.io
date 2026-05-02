@@ -571,6 +571,16 @@ h1.hero-title{
   letter-spacing:.03em;
   font-family:var(--mono);
 }
+.skill-tags .chip{
+  transition:transform .15s ease,border-color .15s ease,color .15s ease,background .15s ease;
+  cursor:default;
+}
+.skill-tags .chip:hover{
+  transform:translateY(-2px);
+  border-color:var(--accent);
+  color:var(--ink);
+  background:var(--bg-elevated);
+}
 
 
 /* ─── PROJECTS ─── */
