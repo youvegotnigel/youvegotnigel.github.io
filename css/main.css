@@ -484,8 +484,9 @@ h1.hero-title{
   font-size:11px;color:var(--ink-faint);
   font-family:var(--mono);margin-top:3px;
   display:flex;align-items:center;gap:5px;
+  font-weight:700;
 }
-.org-loc::before{content:'⌖';font-size:10px;color:var(--ink-faint)}
+.org-loc::before{content:'⌖';font-size:13px;color:var(--ink-mid)}
 .products-row{
   display:flex;align-items:center;gap:8px;
   flex-wrap:wrap;margin-bottom:16px;
