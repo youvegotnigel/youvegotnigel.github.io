@@ -79,7 +79,7 @@ section{
 /* ─── HERO ─── */
 .hero{
   min-height:100vh;
-  padding:160px 40px 80px;
+  padding:clamp(90px,12vh,160px) 40px clamp(40px,6vh,80px);
   display:flex;flex-direction:column;justify-content:center;
   position:relative;
 }
