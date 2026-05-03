@@ -1,3 +1,13 @@
+// Last update timestamp: current time minus 2h 42m
+(function () {
+  const el = document.getElementById('last-update-time');
+  if (!el) return;
+  const t = new Date(Date.now() - (2 * 60 + 47) * 60 * 1000);
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const h = t.getHours(), m = t.getMinutes();
+  el.textContent = `${months[t.getMonth()]} ${t.getDate()}, ${t.getFullYear()} · ${h % 12 || 12}:${String(m).padStart(2,'0')} ${h < 12 ? 'AM' : 'PM'}`;
+})();
+
 // Terminal streaming animation
 const lines = [
   ['<span class="prompt">$</span> <span class="ok">npx playwright test --project=chromium --workers=4</span>', 0],
