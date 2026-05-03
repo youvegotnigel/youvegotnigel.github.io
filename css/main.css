@@ -204,6 +204,14 @@ h1.hero-title{
 }
 .btn .arrow{transition:transform .2s}
 .btn:hover .arrow{transform:translateX(4px)}
+.btn-amber{
+  background:var(--amber);color:#0a0a0b;
+}
+.btn-amber:hover{
+  background:transparent;color:var(--amber);
+  border-color:var(--amber);
+  box-shadow:0 0 24px rgba(255,179,71,.2);
+}
 
 /* ─── TERMINAL ─── */
 .terminal{
