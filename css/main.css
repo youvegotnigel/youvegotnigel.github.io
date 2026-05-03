@@ -56,8 +56,19 @@ nav{
   font-size:11px;color:var(--ink-dim);display:flex;align-items:center;gap:8px;
 }
 .status-dot{
+  position:relative;
   width:6px;height:6px;border-radius:50%;background:var(--accent);
   box-shadow:0 0 8px var(--accent);
+  flex-shrink:0;
+}
+.status-dot::after{
+  content:'';position:absolute;inset:-4px;border-radius:50%;
+  border:1.5px solid var(--accent);opacity:0;
+  animation:ping 1.8s ease-out infinite;
+}
+@keyframes ping{
+  0%{transform:scale(.6);opacity:.8}
+  100%{transform:scale(2.2);opacity:0}
 }
 
 /* ─── LAYOUT ─── */
