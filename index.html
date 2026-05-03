@@ -27,7 +27,7 @@
       <a href="#skills">stack</a>
       <a href="#experience">experience</a>
       <a href="#projects">work</a>
-      <a href="#philosophy">philosophy</a>
+      <a href="#blogs">blogs</a>
       <a href="#contact">contact</a>
     </div>
     <div class="nav-status"><span class="status-dot"></span>Available · Q3 2026</div>
@@ -60,7 +60,7 @@
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">View Work <span class="arrow">→</span></a>
-          <a href="#contact" class="btn btn-ghost">Get in Touch <span class="arrow">→</span></a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch <span class="arrow">↘</span></a>
           <a href="assets/Nigel_Mulholland_QA_Automation.pdf" download class="btn btn-amber">Download CV <span
               class="arrow">↓</span></a>
         </div>
@@ -823,47 +823,81 @@
     </div>
   </section>
 
-  <!-- PHILOSOPHY -->
-  <section id="philosophy" class="philosophy">
+  <!-- BLOGS -->
+  <section id="blogs">
     <div class="container">
-      <div class="section-label"><span class="section-num">05</span> · Philosophy</div>
-      <div class="phil-quote">
-        "Quality isn't a phase you bolt on at the end.
-        It's a <span class="accent">posture</span> the whole team takes
-        from the first line of the user story."
+      <div class="section-label"><span class="section-num">05</span> · Blogs</div>
+      <div class="blogs-grid">
+
+        <div class="blog-card">
+          <div class="blog-card-top">
+            <span class="blog-card-num">POST_01</span>
+            <span class="blog-card-tag">codeceptjs</span>
+          </div>
+          <div class="blog-card-title">I Tried CodeceptJS for the First Time</div>
+          <div class="blog-card-excerpt">An intro to setting up CodeceptJS with Playwright — a wrapper that simplifies test authoring through BDD-style syntax and a natural actor-based "I" object.</div>
+          <div class="blog-card-footer">
+            <span class="blog-card-meta">Nov 2025 · 5 min read</span>
+            <a class="blog-card-link" href="https://medium.com/@youvegotnigel/i-tried-codeceptjs-for-the-first-time-2bbac04f530d" target="_blank" rel="noopener">Read on Medium →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-top">
+            <span class="blog-card-num">POST_02</span>
+            <span class="blog-card-tag">selenium grid</span>
+          </div>
+          <div class="blog-card-title">Testing File Downloads with Selenium Grid 4 in Docker</div>
+          <div class="blog-card-excerpt">A practical guide to verifying file downloads inside a Dockerised Selenium Grid 4 — WebDriver config, Docker volumes, and multi-browser verification.</div>
+          <div class="blog-card-footer">
+            <span class="blog-card-meta">Jul 2023 · 7 min read</span>
+            <a class="blog-card-link" href="https://medium.com/@youvegotnigel/testing-file-downloads-with-selenium-grid-4-in-a-docker-environment-d490cc8ee289" target="_blank" rel="noopener">Read on Medium →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-top">
+            <span class="blog-card-num">POST_03</span>
+            <span class="blog-card-tag">azure devops</span>
+          </div>
+          <div class="blog-card-title">Publishing Test Results to Azure DevOps Test Plan in Real Time</div>
+          <div class="blog-card-excerpt">How to push automated test outcomes directly into Azure DevOps Test Plans using Cucumber hooks and the REST API — with live status updates per scenario.</div>
+          <div class="blog-card-footer">
+            <span class="blog-card-meta">Mar 2023 · 8 min read</span>
+            <a class="blog-card-link" href="https://medium.com/@youvegotnigel/how-to-publish-automated-test-results-in-real-time-to-azure-devops-test-plan-546e31480f2f" target="_blank" rel="noopener">Read on Medium →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-top">
+            <span class="blog-card-num">POST_04</span>
+            <span class="blog-card-tag">security</span>
+          </div>
+          <div class="blog-card-title">Security Testing Using Selenium and OWASP ZAP</div>
+          <div class="blog-card-excerpt">Integrating OWASP ZAP with Selenium to detect security vulnerabilities automatically — Maven setup, test config, and full vulnerability report generation.</div>
+          <div class="blog-card-footer">
+            <span class="blog-card-meta">May 2022 · 6 min read</span>
+            <a class="blog-card-link" href="https://medium.com/@youvegotnigel/security-testing-using-selenium-and-owasp-zap-24a40195bb3b" target="_blank" rel="noopener">Read on Medium →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-top">
+            <span class="blog-card-num">POST_05</span>
+            <span class="blog-card-tag">performance</span>
+          </div>
+          <div class="blog-card-title">Performance / Load Testing with k6, InfluxDB and Grafana</div>
+          <div class="blog-card-excerpt">End-to-end guide to load testing with k6, storing results in InfluxDB, and visualising live metrics in Grafana — from setup to dashboard configuration on Windows.</div>
+          <div class="blog-card-footer">
+            <span class="blog-card-meta">Aug 2020 · 9 min read</span>
+            <a class="blog-card-link" href="https://medium.com/@youvegotnigel/performance-load-testing-with-k6-and-visualize-with-influxdb-and-grafana-on-windows-64be7632b495" target="_blank" rel="noopener">Read on Medium →</a>
+          </div>
+        </div>
+
       </div>
 
-      <div class="phil-grid">
-        <div class="phil-card">
-          <div class="phil-card-num">01</div>
-          <div class="phil-card-title">Manual</div>
-          <div class="phil-card-vs">vs · Automation</div>
-          <div class="phil-card-text">
-            They aren't competitors. <strong>Automation buys you regression confidence;
-              manual exploration buys you surprise.</strong> The teams that ship best use both
-            deliberately, automation for the known, exploration for the unknown.
-          </div>
-        </div>
-        <div class="phil-card">
-          <div class="phil-card-num">02</div>
-          <div class="phil-card-title">Pyramid</div>
-          <div class="phil-card-vs">vs · Diamond</div>
-          <div class="phil-card-text">
-            The pyramid still works for greenfield code. But for legacy enterprise systems
-            which is most real work. The <strong>integration-heavy diamond</strong> often gives,
-            you better signal-to-noise than thousands of brittle unit tests around bad architecture.
-          </div>
-        </div>
-        <div class="phil-card">
-          <div class="phil-card-num">03</div>
-          <div class="phil-card-title">Quality Engineering</div>
-          <div class="phil-card-vs">A mindset, not a role</div>
-          <div class="phil-card-text">
-            A QE leader's job isn't to find bugs. It's to <strong>build the systems that make bugs
-              rare and obvious.</strong> Pipelines that fail loudly, frameworks devs can extend, and a culture
-            where asking "what if?" is a contribution, not a delay.
-          </div>
-        </div>
+      <div class="blogs-cta">
+        <a class="view-all-link" href="https://medium.com/@youvegotnigel" target="_blank" rel="noopener">View all posts on Medium →</a>
       </div>
     </div>
   </section>
