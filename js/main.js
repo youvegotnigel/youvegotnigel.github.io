@@ -12,7 +12,7 @@
 const lines = [
   ['<span class="prompt">$</span> <span class="ok">npx playwright test --project=chromium --workers=4</span>', 0],
 
-  ['<span class="dim">Running 6 tests using 4 workers</span>', 200],
+  ['<span class="dim">Running 9 tests using 4 workers</span>', 200],
 
   ['<span class="ok">Running</span> <span class="dim">api.AppointmentBookingTest</span>', 300],
 
@@ -39,7 +39,7 @@ const lines = [
 
   ['<span class="dim">npx playwright show-report</span>', 200],
 
-  ['<span class="prompt">$</span> <span class="cursor"></span>', 400],
+  ['<span class="prompt">$ <span class="cursor"></span></span>', 400],
 ];
 
 const termBody = document.getElementById('termBody');
