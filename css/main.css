@@ -691,46 +691,22 @@ h1.hero-title{
   display:flex;flex-wrap:wrap;gap:6px;margin-top:20px;
 }
 
-/* ─── PHILOSOPHY ─── */
-.philosophy{background:#08080A}
-.phil-quote{
-  font-family:var(--serif);
-  font-size:clamp(28px,4vw,52px);
-  font-weight:300;
-  font-style:italic;
-  letter-spacing:-.02em;
-  line-height:1.2;
-  max-width:1100px;
-  margin-bottom:80px;
-}
-.phil-quote .accent{color:var(--accent);font-style:normal;font-weight:400}
-.phil-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.phil-card{
-  border:1px solid var(--line);
-  padding:32px;
-  position:relative;
-  background:var(--bg-card);
-}
-.phil-card-num{
-  position:absolute;top:24px;right:24px;
-  font-size:11px;color:var(--ink-faint);
-}
-.phil-card-title{
-  font-family:var(--serif);
-  font-size:20px;font-weight:400;
-  margin-bottom:8px;
-  letter-spacing:-.01em;
-}
-.phil-card-vs{
-  font-size:11px;color:var(--accent);
-  letter-spacing:.1em;text-transform:uppercase;
-  margin-bottom:20px;
-}
-.phil-card-text{
-  font-family:var(--serif);
-  font-size:14px;line-height:1.6;color:var(--ink-dim);
-}
-.phil-card-text strong{color:var(--ink);font-weight:500}
+/* ─── BLOGS ─── */
+.blogs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
+.blog-card{background:var(--bg-card);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,box-shadow .2s}
+.blog-card:hover{border-color:var(--line-strong);box-shadow:0 0 24px rgba(212,255,63,.04)}
+.blog-card-top{display:flex;justify-content:space-between;align-items:flex-start}
+.blog-card-num{font-size:11px;color:var(--ink-faint)}
+.blog-card-tag{font-size:10px;padding:3px 8px;border:1px solid var(--line);color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase}
+.blog-card-title{font-size:14px;color:var(--ink);line-height:1.45;font-weight:500}
+.blog-card-excerpt{font-size:12px;color:var(--ink-dim);line-height:1.65;flex:1}
+.blog-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--line);margin-top:auto}
+.blog-card-meta{font-size:11px;color:var(--ink-faint)}
+.blog-card-link{font-size:11px;color:var(--accent);letter-spacing:.04em;transition:letter-spacing .15s}
+.blog-card-link:hover{letter-spacing:.08em}
+.blogs-cta{display:flex;justify-content:flex-end;margin-top:8px}
+.view-all-link{font-size:12px;color:var(--ink-dim);border-bottom:1px solid var(--line);padding-bottom:4px;transition:color .2s,border-color .2s}
+.view-all-link:hover{color:var(--accent);border-color:var(--accent)}
 
 /* ─── CONTACT ─── */
 .contact{padding:140px 40px 100px;text-align:center;position:relative}
@@ -815,7 +791,7 @@ footer .ok{color:var(--accent)}
   .git-header{flex-direction:column;align-items:flex-start;gap:8px}
   .git-header .meta-right{flex-wrap:wrap;gap:12px}
   .projects-grid{grid-template-columns:1fr}
-  .phil-grid{grid-template-columns:1fr}
+  .blogs-grid{grid-template-columns:1fr}
   .pipeline{flex-direction:column;align-items:stretch}
   .stage::after{content:'↓';right:50%;top:auto;bottom:-14px;transform:translateX(50%)}
   footer{flex-direction:column;gap:12px}
