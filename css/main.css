@@ -447,8 +447,10 @@ h1.hero-title{
   box-shadow:0 0 0 4px var(--bg),0 0 20px var(--accent);
   transform:scale(1.15);
 }
-.commit.merge .commit-node{
+.commit.merge:hover .commit-node{
   background:var(--accent);
+  box-shadow:0 0 0 4px var(--bg),0 0 20px var(--accent);
+  transform:scale(1.15);
 }
 
 .commit-hash{
