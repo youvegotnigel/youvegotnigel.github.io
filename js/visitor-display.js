@@ -3,6 +3,7 @@
   const SUPABASE_URL = "https://vlszsqyuctpjqzxngzso.supabase.co";
   const SUPABASE_KEY = "sb_publishable_zIyRmlgDRuzkIexoVZp-lw_HswicWwI";
   const UPDATE_INTERVAL = 30000; // 30 seconds
+  let isFirstLoad = true;
 
   function updateVisitorCount() {
     fetch(
@@ -15,6 +16,15 @@
           const element = document.getElementById("visitor-count-number");
           if (element) {
             element.textContent = count.toLocaleString();
+
+            // Trigger glow animation on first load
+            if (isFirstLoad) {
+              const counter = document.querySelector(".visitor-counter");
+              if (counter) {
+                counter.classList.add("loaded");
+              }
+              isFirstLoad = false;
+            }
           }
         }
       })

@@ -785,6 +785,26 @@ footer .ok{color:var(--accent)}
   color:var(--ink-dim);
   transition:all .3s ease;
 }
+.visitor-counter.loaded{
+  animation:countGlow 1.2s ease-out;
+}
+@keyframes countGlow{
+  0%{
+    box-shadow:0 0 0 0 rgba(251,146,60,.6),
+               0 0 0 0 rgba(251,146,60,.4);
+    border-color:var(--accent);
+  }
+  50%{
+    box-shadow:0 0 0 12px rgba(251,146,60,.2),
+               0 0 0 20px rgba(251,146,60,0);
+    border-color:var(--accent);
+  }
+  100%{
+    box-shadow:0 0 0 0 rgba(251,146,60,0),
+               0 0 0 0 rgba(251,146,60,0);
+    border-color:var(--line);
+  }
+}
 .visitor-counter:hover{
   background:rgba(255,255,255,.06);
   color:var(--ink);
