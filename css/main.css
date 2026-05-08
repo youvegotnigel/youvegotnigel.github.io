@@ -696,14 +696,14 @@ h1.hero-title{
 /* ─── BLOGS ─── */
 .blogs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px}
 .blog-card{background:var(--bg-card);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,box-shadow .2s}
-.blog-card:hover{border-color:var(--line-strong);box-shadow:0 0 24px rgba(212,255,63,.04)}
+.blog-card:hover{border-color:var(--accent);box-shadow:0 0 24px rgba(212,255,63,.2)}
 .blog-card-top{display:flex;justify-content:space-between;align-items:flex-start}
 .blog-card-num{font-size:11px;color:var(--ink-faint)}
-.blog-card-tag{font-size:10px;padding:3px 8px;border:1px solid var(--line);color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase}
+.blog-card-tag{font-size:10px;padding:3px 8px;border:1px solid var(--line);color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
 .blog-card-title{font-size:14px;color:var(--ink);line-height:1.45;font-weight:500}
 .blog-card-excerpt{font-size:12px;color:var(--ink-dim);line-height:1.65;flex:1}
 .blog-card-footer{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--line);margin-top:auto}
-.blog-card-meta{font-size:11px;color:var(--ink-faint)}
+.blog-card-meta{font-size:11px;color:var(--amber)}
 .blog-card-link{font-size:11px;color:var(--accent);letter-spacing:.04em;transition:letter-spacing .15s}
 .blog-card-link:hover{letter-spacing:.08em}
 .blogs-cta{display:flex;justify-content:flex-end;margin-top:8px}

@@ -1,0 +1,50 @@
+name: Weekly Visitor Report
+
+# Run every Sunday at 09:00 UTC
+on:
+  schedule:
+    - cron: "0 9 * * 0"
+  # Allow manual trigger for testing
+  workflow_dispatch:
+
+jobs:
+  send-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Fetch visitor count
+        id: fetch-count
+        run: |
+          # Fetch the current count from Supabase
+          RESPONSE=$(curl -s -X GET \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/visits?select=total_count,last_updated" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}")
+
+          # Parse JSON to extract the count
+          TOTAL_COUNT=$(echo "$RESPONSE" | jq -r '.[0].total_count')
+          LAST_UPDATED=$(echo "$RESPONSE" | jq -r '.[0].last_updated')
+
+          # Output for next step
+          echo "total_count=$TOTAL_COUNT" >> $GITHUB_OUTPUT
+          echo "last_updated=$LAST_UPDATED" >> $GITHUB_OUTPUT
+
+      - name: Send email report
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.EMAIL_SERVER_ADDRESS }}
+          server_port: ${{ secrets.EMAIL_SERVER_PORT }}
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "Portfolio Visitor Report - Week of ${{ github.event.head_commit.timestamp }}"
+          to: youvegotnigel@gmail.com
+          from: ${{ secrets.EMAIL_FROM }}
+          body: |
+            Weekly Portfolio Visitor Report
+            ================================
+
+            Total Visits: ${{ steps.fetch-count.outputs.total_count }}
+            Last Updated: ${{ steps.fetch-count.outputs.last_updated }}
+            Report Generated: ${{ github.event.head_commit.timestamp }}
+
+            Check your portfolio analytics at:
+            https://youvegotnigel.github.io
