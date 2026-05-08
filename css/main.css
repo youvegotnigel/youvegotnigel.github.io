@@ -352,9 +352,10 @@ h1.hero-title{
   background:var(--bg);
   padding:24px;
   display:flex;flex-direction:column;gap:6px;
-  transition:background .3s;
+  transition:background .3s,border-color .2s,box-shadow .2s;
+  border:1px solid var(--line);
 }
-.cert-card:hover{background:var(--bg-elevated)}
+.cert-card:hover{background:var(--bg-elevated);border-color:var(--accent);box-shadow:0 0 24px rgba(212,255,63,.2)}
 .cert-num{
   font-size:11px;color:var(--ink-faint);
   letter-spacing:.1em;margin-bottom:4px;
