@@ -20,9 +20,16 @@ jobs:
             "${{ secrets.SUPABASE_URL }}/rest/v1/visits?select=total_count,last_updated" \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}")
 
+          # Debug: print the raw response
+          echo "Raw response: $RESPONSE"
+
           # Parse JSON to extract the count
-          TOTAL_COUNT=$(echo "$RESPONSE" | jq -r '.total_count')
-          LAST_UPDATED=$(echo "$RESPONSE" | jq -r '.last_updated')
+          TOTAL_COUNT=$(echo "$RESPONSE" | jq -r '.[0].total_count')
+          LAST_UPDATED=$(echo "$RESPONSE" | jq -r '.[0].last_updated')
+
+          # Debug: print parsed values
+          echo "Total count: $TOTAL_COUNT"
+          echo "Last updated: $LAST_UPDATED"
 
           # Output for next step
           echo "total_count=$TOTAL_COUNT" >> $GITHUB_OUTPUT
