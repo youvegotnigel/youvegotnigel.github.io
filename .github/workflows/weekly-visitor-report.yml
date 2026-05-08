@@ -17,8 +17,7 @@ jobs:
         run: |
           # Fetch the current count from Supabase
           RESPONSE=$(curl -s -X GET \
-            "${{ secrets.SUPABASE_URL }}/rest/v1/visits?select=total_count,last_updated" \
-            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}")
+            "${{ secrets.SUPABASE_URL }}/rest/v1/visits?select=total_count,last_updated&apikey=${{ secrets.SUPABASE_ANON_KEY }}")
 
           # Debug: print the raw response
           echo "Raw response: $RESPONSE"
