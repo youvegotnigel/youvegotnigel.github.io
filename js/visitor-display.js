@@ -3,7 +3,7 @@
   const SUPABASE_URL = "https://vlszsqyuctpjqzxngzso.supabase.co";
   const SUPABASE_KEY = "sb_publishable_zIyRmlgDRuzkIexoVZp-lw_HswicWwI";
   const UPDATE_INTERVAL = 30000; // 30 seconds
-  let isFirstLoad = true;
+  let hasAnimated = false;
 
   function updateVisitorCount() {
     fetch(
@@ -16,19 +16,20 @@
           const element = document.getElementById("visitor-count-number");
           if (element) {
             element.textContent = count.toLocaleString();
-
-            // Trigger glow animation on first load
-            if (isFirstLoad) {
-              const counter = document.querySelector(".visitor-counter");
-              if (counter) {
-                counter.classList.add("loaded");
-              }
-              isFirstLoad = false;
-            }
           }
         }
       })
       .catch((err) => console.debug("Visitor count unavailable:", err));
+  }
+
+  function triggerGlowAnimation() {
+    if (!hasAnimated) {
+      const counter = document.querySelector(".visitor-counter");
+      if (counter) {
+        counter.classList.add("loaded");
+        hasAnimated = true;
+      }
+    }
   }
 
   // Update on page load
@@ -40,4 +41,22 @@
 
   // Update every 30 seconds
   setInterval(updateVisitorCount, UPDATE_INTERVAL);
+
+  // Trigger glow animation when scrolling into view
+  if ("IntersectionObserver" in window) {
+    const counter = document.querySelector(".visitor-counter");
+    if (counter) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              triggerGlowAnimation();
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+      observer.observe(counter);
+    }
+  }
 })();
