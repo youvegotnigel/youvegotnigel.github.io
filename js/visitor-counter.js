@@ -11,7 +11,6 @@
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer sb_publishable_zIyRmlgDRuzkIexoVZp-lw_HswicWwI",
         },
         body: JSON.stringify({}),
       }).catch((err) => {
