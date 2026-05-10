@@ -2,7 +2,7 @@
 (function initVisitorCounter() {
   // Configuration
   const SUPABASE_FUNCTION_URL =
-    "https://vlszsqyuctpjqzxngzso.supabase.co/functions/v1/increment-visitor?apikey=sb_publishable_zIyRmlgDRuzkIexoVZp-lw_HswicWwI";
+    "https://vlszsqyuctpjqzxngzso.supabase.co/functions/v1/increment-visitor";
 
   // Fire-and-forget POST request to increment counter
   function incrementCounter() {
