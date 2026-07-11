@@ -74,6 +74,7 @@ if (reduceMotion) {
 function animateCounters() {
   document.querySelectorAll('[data-count]').forEach(el => {
     const target = +el.dataset.count;
+    if (reduceMotion) { el.textContent = target; return; }
     let cur = 0;
     const step = Math.max(1, target / 30);
     const t = setInterval(() => {

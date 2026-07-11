@@ -16,7 +16,7 @@ test('every nav link targets an existing section', async ({ page }) => {
   }
 });
 
-test('hero CTA links resolve to in-page targets or assets', async ({ page }) => {
+test('hero has 3 CTA links', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('.hero-cta a')).toHaveCount(3);
 });
