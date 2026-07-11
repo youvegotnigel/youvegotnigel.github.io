@@ -1,8 +1,9 @@
 import { test, expect } from '@playwright/test';
 
-// These hosts block automated requests (LinkedIn returns 999, X blocks bots).
+// These hosts block automated requests (LinkedIn returns 999, X blocks bots,
+// Medium returns 403 for requests from GitHub Actions runner IPs).
 // Their links are still covered by visibility assertions in other specs.
-const SKIP_HOSTS = ['www.linkedin.com', 'linkedin.com', 'x.com', 'twitter.com'];
+const SKIP_HOSTS = ['www.linkedin.com', 'linkedin.com', 'x.com', 'twitter.com', 'medium.com'];
 
 test('all external links resolve', async ({ page, request }) => {
   test.setTimeout(120_000);
