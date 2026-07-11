@@ -56,12 +56,25 @@ function addLine() {
   idx++;
   setTimeout(addLine, delay);
 }
-setTimeout(addLine, 800);
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduceMotion) {
+  lines.forEach(([html]) => {
+    const div = document.createElement('div');
+    div.className = 'term-line';
+    div.innerHTML = html;
+    div.style.animation = 'none';
+    div.style.opacity = 1;
+    termBody.appendChild(div);
+  });
+} else {
+  setTimeout(addLine, 800);
+}
 
 // Counter animation
 function animateCounters() {
   document.querySelectorAll('[data-count]').forEach(el => {
     const target = +el.dataset.count;
+    if (reduceMotion) { el.textContent = target; return; }
     let cur = 0;
     const step = Math.max(1, target / 30);
     const t = setInterval(() => {
@@ -84,12 +97,14 @@ const stat = document.querySelector('.about-stats');
 if (stat) obs.observe(stat);
 
 // Scroll fade-in
-const fadeEls = document.querySelectorAll('.commit, .project, .skill-cat, .cert-card, .phil-card, .phil-quote, .git-header, .about-side, .about-text');
-fadeEls.forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity .8s ease, transform .8s ease';
-});
+const fadeEls = document.querySelectorAll('.commit, .project, .skill-cat, .cert-card, .phil-card, .phil-quote, .git-header, .about-side, .about-text, .oss-card, .lab-strip');
+if (!reduceMotion) {
+  fadeEls.forEach(el => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity .8s ease, transform .8s ease';
+  });
+}
 const fadeObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {

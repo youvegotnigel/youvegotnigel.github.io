@@ -5,6 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nigel Mulholland - Lead Test Automation Engineer</title>
+  <meta name="description"
+    content="Nigel Mulholland — ISTQB certified Lead Test Automation Engineer (SDET) with 7+ years designing scalable automation frameworks with Playwright, Selenide, K6, REST Assured and AWS. Open source: Playwright cheat sheet, BDD frameworks, performance testing." />
+  <link rel="canonical" href="https://youvegotnigel.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://youvegotnigel.github.io/" />
+  <meta property="og:title" content="Nigel Mulholland — Lead Test Automation Engineer" />
+  <meta property="og:description"
+    content="I build frameworks. You ship without fear. Playwright, Selenide, K6, REST Assured — 7+ years of test automation leadership." />
+  <meta property="og:image" content="https://youvegotnigel.github.io/assets/images/og-image.png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@youvegotnigel" />
+  <meta name="twitter:title" content="Nigel Mulholland — Lead Test Automation Engineer" />
+  <meta name="twitter:description"
+    content="I build frameworks. You ship without fear. Playwright, Selenide, K6, REST Assured — 7+ years of test automation leadership." />
+  <meta name="twitter:image" content="https://youvegotnigel.github.io/assets/images/og-image.png" />
   <link rel="icon" type="image/png" href="assets/images/profile/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +32,47 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nigel Mulholland",
+    "jobTitle": "Lead Test Automation Engineer",
+    "url": "https://youvegotnigel.github.io/",
+    "image": "https://youvegotnigel.github.io/assets/images/og-image.png",
+    "worksFor": { "@type": "Organization", "name": "VitalHub Innovations Lab" },
+    "knowsAbout": ["Test Automation", "Playwright", "Selenide", "K6", "Performance Testing", "Accessibility Testing", "CI/CD"],
+    "sameAs": [
+      "https://github.com/youvegotnigel",
+      "https://www.linkedin.com/in/nigel-mulholland",
+      "https://medium.com/@youvegotnigel",
+      "https://x.com/youvegotnigel"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
   <!-- NAV -->
   <nav>
-    <div href="#home" class="logo"><span class="logo-dot"></span>NIGEL MULHOLLAND<span style="color:var(--accent)">/</span>QE Lead
-    </div>
+    <a href="#home" class="logo"><span class="logo-dot"></span>NIGEL MULHOLLAND<span style="color:var(--accent)">/</span>QE Lead
+    </a>
     <div class="nav-links">
       <a href="#home">home</a>
       <a href="#about">about</a>
       <a href="#skills">stack</a>
       <a href="#experience">experience</a>
       <a href="#projects">work</a>
+      <a href="#opensource">open source</a>
       <a href="#blogs">blogs</a>
       <a href="#contact">contact</a>
     </div>
     <div class="nav-status"><span class="status-dot"></span>Available · Q3 2026</div>
   </nav>
+
+  <main>
 
   <!-- HERO -->
   <section class="hero" id="home">
@@ -53,7 +94,7 @@
           You ship <span class="em">without fear.</span>
         </h1>
         <p class="hero-sub">
-          I'm a ISTQB certified Test Automation Engineer with hands on experience across Web, API
+          I'm an ISTQB certified Test Automation Engineer with hands on experience across Web, API
           and Mobile platforms, specialising in designing robust, scalable automation frameworks using modern open
           source tools. I continuously explore new tools and practices to push the boundaries of what's possible in
           modern QA.
@@ -97,7 +138,7 @@
             stopped asking <em class="accent">"but what if?"</em>
           </p>
           <p>
-            Seven years on, I lead test the automation efforts at VitalHub Innovations Lab,
+            Seven years on, I lead the test automation efforts at VitalHub Innovations Lab,
             building reusable frameworks across Selenide, Playwright, Cypress and REST Assured, and designing
             AWS native performance harnesses running hundreds of concurrent browser sessions on Fargate.
           </p>
@@ -105,7 +146,7 @@
             But the work I’m most proud of isn’t the code. It’s <strong class="accent">shortening release cycles,
               mentoring
               junior engineers </strong> into confident automation owners, and embedding accessibility checks directly
-            into pipelines making quality impossible to bypass.</strong>
+            into pipelines making quality impossible to bypass.
           </p>
           <p>
             Looking ahead, I'm exploring how AI can eliminate repetitive work and raise the bar for quality.
@@ -744,49 +785,15 @@
             <span class="chip">HL7</span>
             <span class="chip">Mockneat</span>
           </div>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/youvegotnigel/selenide-cucumber-framework"
+              target="_blank" rel="noopener">Public reference implementation of this pattern →</a>
+          </div>
         </div>
 
         <div class="project">
           <div class="project-meta">
             <span class="project-num">CASE_03</span>
-            <span class="project-status"><span class="dot"></span>Live / Open Source</span>
-          </div>
-          <div class="project-title">Playwright Commands Cheat Sheet</div>
-          <div class="project-tagline">200+ commands, searchable, filterable, copy ready</div>
-
-          <div class="project-block">
-            <div class="project-block-label">Problem</div>
-            <div class="project-block-text">Engineers constantly tab hop between Playwright docs looking for the right
-              command, syntax, or example breaking focus every time.</div>
-          </div>
-          <div class="project-block">
-            <div class="project-block-label">Solution</div>
-            <div class="project-block-text">Built an interactive browser based reference with 200+ commands across 10
-              categories. Filter by difficulty, search by keyword, copy snippets instantly, and jump
-              straight to the official docs, all in one place.</div>
-          </div>
-
-          <div class="project-impact">
-            <div>
-              <div class="impact-num">208+</div>
-              <div class="impact-label">Commands documented</div>
-            </div>
-            <div>
-              <div class="impact-num">10</div>
-              <div class="impact-label">Categories covered</div>
-            </div>
-          </div>
-          <div class="project-stack">
-            <span class="chip">Playwright</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">HTML/CSS</span>
-            <span class="chip">GitHub Pages</span>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="project-meta">
-            <span class="project-num">CASE_04</span>
             <span class="project-status"><span class="dot"></span>API Testing</span>
           </div>
           <div class="project-title">Rest Assured API Regression Suite</div>
@@ -822,6 +829,191 @@
             <span class="chip">Jenkins</span>
           </div>
         </div>
+
+        <div class="project">
+          <div class="project-meta">
+            <span class="project-num">CASE_04</span>
+            <span class="project-status"><span class="dot"></span>Performance / Open Source</span>
+          </div>
+          <div class="project-title">K6 Performance Testing Framework</div>
+          <div class="project-tagline">Dual layer load testing — protocol and real browser</div>
+
+          <div class="project-block">
+            <div class="project-block-label">Problem</div>
+            <div class="project-block-text">Protocol level load tests miss what users actually feel. Client side
+              regressions in metrics like LCP and CLS never surface in pure HTTP load tests, so teams discover them
+              only after release.</div>
+          </div>
+          <div class="project-block">
+            <div class="project-block-label">Solution</div>
+            <div class="project-block-text">Built a TypeScript K6 framework that tests two layers side by side:
+              k6/http for document and asset delivery, and k6/browser for real login flows measuring Core Web
+              Vitals. Smoke, load and stress profiles ramp from 1 to 200 virtual users against custom thresholds,
+              with HTML/JSON reports and live Grafana dashboards via Prometheus.</div>
+          </div>
+
+          <div class="project-impact">
+            <div>
+              <div class="impact-num">200</div>
+              <div class="impact-label">Virtual users at stress peak</div>
+            </div>
+            <div>
+              <div class="impact-num">2</div>
+              <div class="impact-label">Layers — protocol + browser</div>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span class="chip">K6</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">k6/browser</span>
+            <span class="chip">Core Web Vitals</span>
+            <span class="chip">Prometheus</span>
+            <span class="chip">Grafana</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/youvegotnigel/saucedemo-k6-perf" target="_blank"
+              rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPEN SOURCE & LAB -->
+  <section id="opensource">
+    <div class="container">
+      <div class="section-label"><span class="section-num">05</span> · Open Source & Lab</div>
+      <div class="oss-grid">
+
+        <div class="oss-card">
+          <div class="oss-card-top">
+            <span class="oss-card-num">REPO_01</span>
+            <span class="oss-card-tag">live · open source</span>
+          </div>
+          <div class="oss-card-title">Playwright Commands Cheat Sheet</div>
+          <div class="oss-card-desc">Interactive, searchable reference of 208+ Playwright commands across 10
+            categories. Filter by difficulty, copy snippets instantly, jump straight to the official docs.</div>
+          <div class="oss-card-stack">
+            <span class="chip">Playwright</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">GitHub Pages</span>
+          </div>
+          <div class="oss-card-footer">
+            <a class="oss-card-link" href="https://youvegotnigel.github.io/playwright-commands-cheat-sheet/"
+              target="_blank" rel="noopener">Live site →</a>
+            <a class="oss-card-link" href="https://github.com/youvegotnigel/playwright-commands-cheat-sheet"
+              target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="oss-card">
+          <div class="oss-card-top">
+            <span class="oss-card-num">REPO_02</span>
+            <span class="oss-card-tag">flagship framework</span>
+          </div>
+          <div class="oss-card-title">nios</div>
+          <div class="oss-card-desc">Production grade Playwright + TypeScript quality platform. UI, API with Zod
+            contract validation, WCAG 2.1 AA accessibility and OWASP ZAP security layers, sharded CI runs with
+            merged reports, typed fail fast configuration.</div>
+          <div class="oss-card-stack">
+            <span class="chip">Playwright</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Zod</span>
+            <span class="chip">Axe Core</span>
+            <span class="chip">OWASP ZAP</span>
+          </div>
+          <div class="oss-card-footer">
+            <a class="oss-card-link" href="https://github.com/youvegotnigel/nios" target="_blank"
+              rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="oss-card">
+          <div class="oss-card-top">
+            <span class="oss-card-num">REPO_03</span>
+            <span class="oss-card-tag">quality gates</span>
+          </div>
+          <div class="oss-card-title">pw-ts-framework</div>
+          <div class="oss-card-desc">Strict typing showcase: maximally strict TypeScript and type aware ESLint make
+            broken test code unmergeable. Forgotten awaits, stray any types and leftover test.only become build
+            failures before code review.</div>
+          <div class="oss-card-stack">
+            <span class="chip">Playwright</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">ESLint</span>
+            <span class="chip">GitHub Actions</span>
+          </div>
+          <div class="oss-card-footer">
+            <a class="oss-card-link" href="https://github.com/youvegotnigel/pw-ts-framework" target="_blank"
+              rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="oss-card">
+          <div class="oss-card-top">
+            <span class="oss-card-num">REPO_04</span>
+            <span class="oss-card-tag">demo AUT</span>
+          </div>
+          <div class="oss-card-title">maison</div>
+          <div class="oss-card-desc">A luxury e-commerce demo app purpose built as an application under test. Five
+            testing pillars, deterministic seed data, stable data-testid hooks on every interactive element, and an
+            API reset endpoint for test isolation.</div>
+          <div class="oss-card-stack">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Playwright</span>
+          </div>
+          <div class="oss-card-footer">
+            <a class="oss-card-link" href="https://github.com/youvegotnigel/maison" target="_blank"
+              rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="oss-card">
+          <div class="oss-card-top">
+            <span class="oss-card-num">REPO_05</span>
+            <span class="oss-card-tag">BDD reference</span>
+          </div>
+          <div class="oss-card-title">selenide-cucumber-framework</div>
+          <div class="oss-card-desc">Selenide BDD reference implementation: hierarchical tag strategy, parallel multi
+            browser execution, failure screenshots, and Allure reports published to GitHub Pages straight from
+            CI.</div>
+          <div class="oss-card-stack">
+            <span class="chip">Java</span>
+            <span class="chip">Selenide</span>
+            <span class="chip">Cucumber</span>
+            <span class="chip">TestNG</span>
+            <span class="chip">Allure</span>
+          </div>
+          <div class="oss-card-footer">
+            <a class="oss-card-link" href="https://youvegotnigel.github.io/selenide-cucumber-framework/"
+              target="_blank" rel="noopener">Allure report →</a>
+            <a class="oss-card-link" href="https://github.com/youvegotnigel/selenide-cucumber-framework"
+              target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="lab-strip" id="lab">
+        <div class="lab-label">lab · active experiments</div>
+        <div class="lab-card">
+          <div class="lab-card-head">
+            <span class="lab-card-title">selenide-mcp</span>
+            <span class="lab-card-tag">experiment</span>
+          </div>
+          <div class="lab-card-desc">An MCP server that lets AI assistants drive Selenide test execution over stdio —
+            exploring what AI assisted QA looks like in practice. Java 17 · MCP Java SDK · TestNG.</div>
+          <a class="oss-card-link" href="https://github.com/youvegotnigel/selenide-mcp" target="_blank"
+            rel="noopener">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="blogs-cta">
+        <a class="view-all-link" href="https://github.com/youvegotnigel?tab=repositories" target="_blank"
+          rel="noopener">+ 135 more repositories on GitHub →</a>
       </div>
     </div>
   </section>
@@ -829,7 +1021,7 @@
   <!-- BLOGS -->
   <section id="blogs">
     <div class="container">
-      <div class="section-label"><span class="section-num">05</span> · Blogs</div>
+      <div class="section-label"><span class="section-num">06</span> · Blogs</div>
       <div class="blogs-grid">
 
         <div class="blog-card">
@@ -955,15 +1147,19 @@
     </div>
   </section>
 
+  </main>
+
   <footer>
     <div>© 2026 Nigel Mulholland · Lead Test Automation Engineer</div>
     <div class="visitor-counter">
-      <span class="visitor-counter-icon">👁</span>
+      <span class="visitor-counter-icon" aria-hidden="true">👁</span>
       <span class="visitor-counter-text">Visitors: <span class="visitor-counter-number" id="visitor-count-number">—</span></span>
     </div>
     <div class="build-info">
-      <span>build · v2.4.1</span>
-      <span>tests · <span class="ok">all passed</span></span>
+      <span>build · v2.5.0</span>
+      <span>tested with · <a class="ok"
+          href="https://github.com/youvegotnigel/youvegotnigel.github.io/actions/workflows/tests.yml" target="_blank"
+          rel="noopener">Playwright + axe-core →</a></span>
       <span>uptime · 99.99%</span>
     </div>
   </footer>
