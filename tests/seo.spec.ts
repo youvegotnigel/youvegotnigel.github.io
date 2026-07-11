@@ -33,4 +33,10 @@ test.describe('seo metadata', () => {
     const sitemap = await request.get('/sitemap.xml');
     expect(sitemap.status()).toBe(200);
   });
+
+  test('og image exists and is served', async ({ request }) => {
+    const res = await request.get('/assets/images/og-image.png');
+    expect(res.status()).toBe(200);
+    expect(res.headers()['content-type']).toContain('image/png');
+  });
 });
