@@ -3,3 +3,6 @@
 AGENTS.md
 .superpowers/
 docs/
+node_modules/
+playwright-report/
+test-results/
