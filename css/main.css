@@ -799,6 +799,8 @@ footer{
 }
 footer .build-info{display:flex;gap:16px;align-items:center}
 footer .ok{color:var(--accent)}
+footer a.ok{border-bottom:1px solid transparent;transition:border-color .2s}
+footer a.ok:hover{border-color:var(--accent)}
 
 /* ─── VISITOR COUNTER ─── */
 .visitor-counter{
