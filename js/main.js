@@ -84,7 +84,7 @@ const stat = document.querySelector('.about-stats');
 if (stat) obs.observe(stat);
 
 // Scroll fade-in
-const fadeEls = document.querySelectorAll('.commit, .project, .skill-cat, .cert-card, .phil-card, .phil-quote, .git-header, .about-side, .about-text');
+const fadeEls = document.querySelectorAll('.commit, .project, .skill-cat, .cert-card, .phil-card, .phil-quote, .git-header, .about-side, .about-text, .oss-card, .lab-strip');
 fadeEls.forEach(el => {
   el.style.opacity = 0;
   el.style.transform = 'translateY(20px)';
