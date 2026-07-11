@@ -875,3 +875,9 @@ footer .ok{color:var(--accent)}
   .stage::after{content:'↓';right:50%;top:auto;bottom:-14px;transform:translateX(50%)}
   footer{flex-direction:column;gap:12px}
 }
+
+/* ─── REDUCED MOTION ─── */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  html{scroll-behavior:auto}
+}

@@ -56,7 +56,19 @@ function addLine() {
   idx++;
   setTimeout(addLine, delay);
 }
-setTimeout(addLine, 800);
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduceMotion) {
+  lines.forEach(([html]) => {
+    const div = document.createElement('div');
+    div.className = 'term-line';
+    div.innerHTML = html;
+    div.style.animation = 'none';
+    div.style.opacity = 1;
+    termBody.appendChild(div);
+  });
+} else {
+  setTimeout(addLine, 800);
+}
 
 // Counter animation
 function animateCounters() {
@@ -85,11 +97,13 @@ if (stat) obs.observe(stat);
 
 // Scroll fade-in
 const fadeEls = document.querySelectorAll('.commit, .project, .skill-cat, .cert-card, .phil-card, .phil-quote, .git-header, .about-side, .about-text, .oss-card, .lab-strip');
-fadeEls.forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity .8s ease, transform .8s ease';
-});
+if (!reduceMotion) {
+  fadeEls.forEach(el => {
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity .8s ease, transform .8s ease';
+  });
+}
 const fadeObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
