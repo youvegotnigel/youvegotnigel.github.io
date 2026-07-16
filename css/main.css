@@ -154,6 +154,14 @@ section{
   margin-top:-4px;
   margin-bottom:32px;
 }
+/* backwards fill keeps content visible if animations are unsupported */
+.hero-identity,.hero-meta,.hero-intro{
+  animation:heroRise .7s cubic-bezier(.22,.61,.36,1) backwards;
+}
+.hero-identity{animation-delay:.05s}
+.hero-meta{animation-delay:.2s}
+.hero-intro{animation-delay:.35s}
+@keyframes heroRise{from{opacity:0;transform:translateY(14px)}}
 .hero-index{
   max-width:660px;
   margin-bottom:36px;
@@ -899,5 +907,8 @@ footer a.ok:hover{border-color:var(--accent)}
 /* ─── REDUCED MOTION ─── */
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  /* delays aren't covered by the duration override; without this the hero
+     entrance would hold content invisible through its stagger delay */
+  .hero-identity,.hero-meta,.hero-intro{animation:none}
   html{scroll-behavior:auto}
 }
